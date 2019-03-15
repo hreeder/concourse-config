@@ -12,7 +12,7 @@ jobs:
         trigger: true
       - task: configure
         file: config/ci/tasks/configure.yml
-        params:
+        vars:
           concourse_url: https://ccrs.err.wtf/
           concourse_username: ((concourse.username))
           concourse_password: ((concourse.password))
