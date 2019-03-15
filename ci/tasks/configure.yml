@@ -1,0 +1,17 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: alpine 
+
+inputs:
+  - name: config
+
+params:
+  BASE_URL: ((concourse_url))
+  USERNAME: ((concourse_username))
+  PASSWORD: ((concourse_password))
+
+run: config/configure.sh
