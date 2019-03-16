@@ -31,9 +31,8 @@ jobs:
         params:
           channel: "((discord.channel_id))"
           color: 6076508
-          title: Pipeline Has Completed
+          title: "[Concourse] Job Has Completed"
           message: |
-            :airplane_departure:
             **Pipeline**: concourse-config
             **Job**: configure
-            Concourse has now been configured successfully.
+            :airplane_departure: Concourse has now been configured successfully.
