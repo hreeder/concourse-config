@@ -12,7 +12,7 @@ resources:
       uri: https://github.com/hreeder/concourse-config
   - name: discord
     type: discord
-    check_every: 9999999999h
+    check_every: 999999h
     source:
         token: ((discord.token))
 
@@ -32,4 +32,6 @@ jobs:
           channel: "((discord.channel_id))"
           color: 6076508
           title: Pipeline Has Completed
-          message: I have configured the concourse.
+          message: |
+            I have configured the concourse.
+            **Pipeline**: concourse-config :airplane_departing:
