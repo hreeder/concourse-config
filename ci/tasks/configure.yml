@@ -11,8 +11,8 @@ inputs:
 
 params:
   BASE_URL: ((concourse_url))
-  USERNAME: ((concourse_username))
-  PASSWORD: ((concourse_password))
+  USERNAME: ((concourse.username))
+  PASSWORD: ((concourse.password))
 
 run:
   path: config/configure.sh
