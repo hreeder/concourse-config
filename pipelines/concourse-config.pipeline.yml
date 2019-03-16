@@ -33,5 +33,5 @@ jobs:
           color: 6076508
           title: Pipeline Has Completed
           message: |
-            I have configured the concourse.
             **Pipeline**: concourse-config :airplane_departure:
+            Concourse has now been configured successfully.
