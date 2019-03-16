@@ -4,9 +4,9 @@ roles:
     github:
       users:
         - hreeder
-  - name: member
-    github:
-      users:
-  - name: viewer
-    github:
-      users:
+#  - name: member
+#    github:
+#      users:
+#  - name: viewer
+#    github:
+#      users:
