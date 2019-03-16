@@ -31,4 +31,5 @@ jobs:
         params:
           channel: "((discord.channel_id))"
           color: 6076508
+          title: Pipeline Has Completed
           message: I have configured the concourse.
