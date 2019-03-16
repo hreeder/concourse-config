@@ -34,4 +34,4 @@ jobs:
           title: Pipeline Has Completed
           message: |
             I have configured the concourse.
-            **Pipeline**: concourse-config :airplane_departing:
+            **Pipeline**: concourse-config :airplane_departure:
