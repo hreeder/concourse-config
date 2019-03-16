@@ -1,9 +1,20 @@
 ---
+resource_types:
+  - name: discord
+    type: docker-image
+    source:
+      repository: trivigy/discord-resource
+
 resources:
   - name: config
     type: git
     source:
       uri: https://github.com/hreeder/concourse-config
+  - name: discord
+    type: discord
+    check_every: 9999999999h
+    source:
+        token: ((discord.token))
 
 jobs:
   - name: configure
@@ -16,3 +27,8 @@ jobs:
           concourse_url: https://ccrs.err.wtf/
           concourse_username: ((concourse.username))
           concourse_password: ((concourse.password))
+      - put: discord
+        params:
+          channel: "((discord.channel_id))"
+          color: 6076508
+          message: I have configured the concourse.
