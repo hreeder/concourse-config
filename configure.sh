@@ -8,5 +8,7 @@ echo "Configuring Concourse at $BASE_URL, using user $USERNAME"
 
 yes | ./fly -t main set-pipeline -p concourse-config -c config/pipelines/concourse-config.pipeline.yml
 
-yes | ./fly -t main set-team -n harry-infra -c config/teams/harry-infra.yaml
-yes | ./fly -t main set-team -n hreeder -c config/teams/hreeder.yaml
+for filename in config/teams/*.yaml; do
+    teamname=$(basename $filename .yaml)
+    yes | ./fly -t errwtf set-team -n $teamname -c $filename
+done
