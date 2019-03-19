@@ -1,5 +1,5 @@
 #!/bin/sh
-apk add ca-certificates
+apk add --no-progress ca-certificates
 wget https://github.com/concourse/concourse/releases/download/v5.0.0/fly-5.0.0-linux-amd64.tgz
 tar xzf fly-5.0.0-linux-amd64.tgz
 
