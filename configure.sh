@@ -10,5 +10,5 @@ yes | ./fly -t main set-pipeline -p concourse-config -c config/pipelines/concour
 
 for filename in config/teams/*.yaml; do
     teamname=$(basename $filename .yaml)
-    yes | ./fly -t errwtf set-team -n $teamname -c $filename
+    yes | ./fly -t main set-team -n $teamname -c $filename
 done
