@@ -30,7 +30,8 @@ jobs:
       - put: discord
         params:
           channel: "((discord.channel_id))"
-          color: "6076508"
+          #color: 6076508
+          color: 0x0000FF
           title: "[Concourse] Job Has Completed"
           message: |
             **Pipeline**: concourse-config
