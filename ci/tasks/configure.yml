@@ -15,8 +15,5 @@ params:
   USERNAME: ((concourse.username))
   PASSWORD: ((concourse.password))
 
-# run:
-#   path: config/configure.sh
-
 run:
-  path: /bin/ls
+  path: config/configure.sh
