@@ -8,10 +8,12 @@ resource_types:
 resources:
   - name: config
     type: git
+    icon: github-circle
     source:
       uri: https://github.com/hreeder/concourse-config
   - name: discord
     type: discord
+    icon: discord
     check_every: 999999h
     source:
         token: ((discord.token))
