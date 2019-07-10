@@ -25,10 +25,10 @@ jobs:
         trigger: true
       - task: configure
         file: config/ci/tasks/configure.yml
-        # vars:
-        #   concourse_url: https://ci.tbrb.dev/
-        #   concourse_username: ((concourse.username))
-        #   concourse_password: ((concourse.password))
+        vars:
+          concourse_url: https://ci.tbrb.dev/
+          concourse_username: ((concourse.username))
+          concourse_password: ((concourse.password))
       - put: discord
         params:
           channel: "((discord.channel_id))"

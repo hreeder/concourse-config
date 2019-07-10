@@ -19,7 +19,4 @@ image_resource:
 #   path: config/configure.sh
 
 run:
-  path: /bin/echo
-  args:
-    - hello
-    - world
+  path: /usr/bin/env
