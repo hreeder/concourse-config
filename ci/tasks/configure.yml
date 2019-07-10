@@ -10,10 +10,10 @@ image_resource:
 # inputs:
 #   - name: config
 
-# params:
-#   BASE_URL: ((concourse_url))
-#   USERNAME: ((concourse.username))
-#   PASSWORD: ((concourse.password))
+params:
+  BASE_URL: ((concourse_url))
+  USERNAME: ((concourse.username))
+  PASSWORD: ((concourse.password))
 
 # run:
 #   path: config/configure.sh
