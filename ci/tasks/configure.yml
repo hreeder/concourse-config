@@ -6,13 +6,19 @@ image_resource:
   source:
     repository: alpine 
 
-inputs:
-  - name: config
+# inputs:
+#   - name: config
 
-params:
-  BASE_URL: ((concourse_url))
-  USERNAME: ((concourse.username))
-  PASSWORD: ((concourse.password))
+# params:
+#   BASE_URL: ((concourse_url))
+#   USERNAME: ((concourse.username))
+#   PASSWORD: ((concourse.password))
+
+# run:
+#   path: config/configure.sh
 
 run:
-  path: config/configure.sh
+  path: /bin/echo
+  args:
+    - hello
+    - world
