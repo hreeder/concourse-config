@@ -7,8 +7,8 @@ image_resource:
     repository: alpine
     tag: latest
 
-# inputs:
-#   - name: config
+inputs:
+  - name: config
 
 params:
   BASE_URL: ((concourse_url))
@@ -19,4 +19,4 @@ params:
 #   path: config/configure.sh
 
 run:
-  path: /usr/bin/env
+  path: /bin/ls
