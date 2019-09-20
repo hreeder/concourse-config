@@ -1,0 +1,13 @@
+---
+roles:
+  - name: owner
+    github:
+      users:
+        - hreeder
+        - r-brownhill
+#  - name: member
+#    github:
+#      users:
+#  - name: viewer
+#    github:
+#      users:
